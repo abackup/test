@@ -16,11 +16,11 @@ On = reject
 Off = direct
 DIRECT = direct
 [Proxy Group]
-Proxy = select, Shadowsocks, HTTPoverTLS
+Proxy = select, SS, V2Ray
 CN = select, DIRECT, 🇨🇳电信, 🇨🇳联通, 🇨🇳移动
 ADblock = select, On, Off
-Shadowsocks = select, 🇭🇰HKT, 🇭🇰WTT
-HTTPoverTLS = select, 🇭🇰SSL-HKT, 🇭🇰SSL-WTT
+SS = select, 🇭🇰HKT, 🇭🇰WTT
+V2Ray = select, 🇭🇰SSL-HKT, 🇭🇰SSL-WTT
 [Rule]
 # AD Block KEYWORD
 DOMAIN-KEYWORD,admarvel,ADblock
