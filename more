@@ -1,26 +1,72 @@
 [General]
 skip-proxy = 10.0.0.0/8, 17.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, 127.0.0.1, localhost, *.local
-dns-server = 221.4.8.1, 223.5.5.5, 119.29.29.29, 101.6.6.6, 9.9.9.9, 116.62.218.19:443, 208.67.220.220:443, 208.67.222.222:443, system
+dns-server = 1.1.1.1, 8.8.8.8, 8.8.4.4, 9.9.9.9, system
 udp-relay = true
 
 [Proxy]
-🇭🇰WTT = ss, wtt.b.a, 44443, chacha20, sumsethan@wtt
-🇭🇰SSL-WTT = https, wtt.b.a, 34443, sumsethan, sumsethan@wtt
-🇭🇰HKT = ss, hkt.b.a, 54443, chacha20, sumsethan@hkt
-🇭🇰SSL-HKT = https, hkt.b.a, 34443, sumsethan, sumsethan@hkt
-🇨🇳电信 = ss, ct.b.a, 54443, chacha20, sumsethan@ct
-🇨🇳联通 = ss, cu.b.a, 54443, chacha20, sumsethan@cu
-🇨🇳移动 = ss, cm.b.a, 54443, chacha20, sumsethan@cm
-Home = ss, frp.b.a, 44443, chacha20, sumsethan@frp
+X= vmess, ff5c0fb.hc.gladns.com, 3306, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.apple.com:30513, sni=baidu.com, ws-headers=Host:baidu.com
+X2 = vmess, ff5c0fb.hd.gladns.com, 3306, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.apple.com:30513, sni=baidu.com, ws-headers=Host:baidu.com
+X3 = vmess, ff5c0fb.wx.gladns.com, 3306, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.apple.com:30513, sni=baidu.com, ws-headers=Host:baidu.com
+X4 = vmess, ff5c0fb.ha.gladns.com, 3306, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.apple.com:30513, sni=baidu.com, ws-headers=Host:baidu.com
+X5 = vmess, 139.226.163.144, 10003, username=0c421643-6047-4ae9-b71d-80dcdaa827be, tls=false
+X6 = vmess, awsbj.xxatf.top, 10086, username=f2494d70-1137-339f-8464-828b0f826ee1, tls=false, ws=true, ws-path=/v2ray, sni=86.xxatf.top, ws-headers=Host:86.xxatf.top
+X7 = vmess, jpc5269.azzico.space, 11562, username=8bdd2925-7218-314b-987a-dcbb44d09852, tls=false, ws=true, ws-path=/video, sni=jpc5269.azzico.pw, ws-headers=Host:jpc5269.azzico.pw
+X8 = vmess, a43db2148a730d16a.awsglobalaccelerator.com, 44444, username=117136e6-03f6-4300-8d57-232c47d4b71e, tls=false, ws=true, ws-path=/, sni=a43db2148a730d16a.awsglobalaccelerator.com, ws-headers=Host:a43db2148a730d16a.awsglobalaccelerator.com
+X9 = vmess, 120.232.96.45, 20007, username=03349423-6f1b-3e98-9d48-3eb8d3b082b0, tls=false, ws=true, ws-path=/, sni=120.232.96.45, ws-headers=Host:120.232.96.45
+X10 = vmess, gm.xxatf.top, 10094, username=f2494d70-1137-339f-8464-828b0f826ee1, tls=false, ws=true, ws-path=/lala, sni=94.xxatf.top, ws-headers=Host:94.xxatf.top
+X11 = vmess, gm.xxatf.top, 10096, username=f2494d70-1137-339f-8464-828b0f826ee1, tls=false, ws=true, ws-path=/v2ray, sni=96.xxatf.top, ws-headers=Host:96.xxatf.top
+X12 = vmess, 120.236.197.141, 3306, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.apple.com:30513, sni=baidu.com, ws-headers=Host:baidu.com
+X13 = vmess, 58.177.131.223, 443, username=b707c9e6-3a61-4f0b-8844-9a398cfadfb7, tls=true, ws=true, ws-path=/add76314/, sni=centos.fuchau.xyz, ws-headers=Host:centos.fuchau.xyz
+X14 = vmess, twa3116.azzico.space, 11566, username=8bdd2925-7218-314b-987a-dcbb44d09852, tls=false, ws=true, ws-path=/video, sni=twa3116.azzico.pw, ws-headers=Host:twa3116.azzico.pw
+X15 = vmess, twa3116.azzico.space, 11566, username=15a76c75-da8a-3de2-bdc2-3bbd389d7ee1, tls=false, ws=true, ws-path=/video, sni=twa3116.azzico.pw, ws-headers=Host:twa3116.azzico.pw
+X16 = vmess, centos.fuchau.xyz, 443, username=b707c9e6-3a61-4f0b-8844-9a398cfadfb7, tls=true, ws=true, ws-path=/add76314/, sni=centos.fuchau.xyz, ws-headers=Host:centos.fuchau.xyz
+X17 = vmess, ff5c0fb.he.gladns.com, 3306, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.apple.com:30513, sni=baidu.com, ws-headers=Host:baidu.com
+X18 = vmess, 120.236.197.201, 3201, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.apple.com:30513, sni=baidu.com, ws-headers=Host:baidu.com
+X19 = vmess, ff5c0fb.hf.gladns.com, 3306, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.apple.com:30513, sni=baidu.com, ws-headers=Host:baidu.com
+X20 = vmess, 120.236.197.201, 3202, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.apple.com:30513, sni=baidu.com, ws-headers=Host:baidu.com
+X21 = vmess, 60.249.3.226, 443, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=true, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=ff5c0fb.fm.icloud.com:30513, ws-headers=Host:ff5c0fb.fm.icloud.com:30513
+X22 = vmess, 60.249.3.226, 80, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=icloud.com, ws-headers=Host:icloud.com
+X23 = vmess, 60.249.3.228, 80, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/c27821f.fm.icloud.com:16708, sni=60.249.3.228, ws-headers=Host:60.249.3.228
+X24 = vmess, ff5c0fb.ra.cloudflare.systems, 443, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=true, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=ff5c0fb.fm.icloud.com:30513, ws-headers=Host:ff5c0fb.fm.icloud.com:30513
+X25 = vmess, 60.249.3.228, 443, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=true, ws=true, ws-path=/s/c27821f.fm.icloud.com:16708, sni=60.249.3.228, ws-headers=Host:60.249.3.228
+X26 = vmess, kr01.fajiazhifu.buzz, 443, username=ecdc5550-d752-4bf6-890c-673d479accae, tls=true, ws=true, ws-path=/test, sni=kr01.fajiazhifu.buzz, ws-headers=Host:kr01.fajiazhifu.buzz
+X27 = vmess, ff5c0fb.rb.gladns.com, 80, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=icloud.com, ws-headers=Host:icloud.com
+X28 = vmess, ff5c0fb.ra.gladns.com, 443, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=true, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=ff5c0fb.fm.icloud.com:30513, ws-headers=Host:ff5c0fb.fm.icloud.com:30513
+X29 = vmess, ff5c0fb.rc.cloudflare.systems, 80, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=icloud.com, ws-headers=Host:icloud.com
+X30 = vmess, ff5c0fb.rc.gladns.com, 80, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=icloud.com, ws-headers=Host:icloud.com
+X31 = vmess, ff5c0fb.ra.gladns.com, 80, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=icloud.com, ws-headers=Host:icloud.com
+X32 = vmess, ff5c0fb.re.gladns.com, 80, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=icloud.com, ws-headers=Host:icloud.com
+X33 = vmess, ff5c0fb.rb.cloudflare.systems, 80, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=icloud.com, ws-headers=Host:icloud.com
+X34 = vmess, ff5c0fb.re.cloudflare.systems, 443, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=true, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=ff5c0fb.fm.icloud.com:30513, ws-headers=Host:ff5c0fb.fm.icloud.com:30513
+X35 = vmess, ff5c0fb.re.cloudflare.systems, 80, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=icloud.com, ws-headers=Host:icloud.com
+X36 = vmess, ff5c0fb.rc.cloudflare.systems, 443, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=true, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=ff5c0fb.fm.icloud.com:30513, ws-headers=Host:ff5c0fb.fm.icloud.com:30513
+X37 = vmess, c27821f.rb.cloudflare.systems, 80, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/c27821f.fm.icloud.com:16708, sni=c27821f.rb.cloudflare.systems, ws-headers=Host:c27821f.rb.cloudflare.systems
+X38 = vmess, 211.72.35.153, 3306, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.apple.com:30513, sni=baidu.com, ws-headers=Host:baidu.com
+X39 = vmess, ff5c0fb.rf.cloudflare.systems, 80, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=icloud.com, ws-headers=Host:icloud.com
+X40 = vmess, ff5c0fb.rd.gladns.com, 80, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=icloud.com, ws-headers=Host:icloud.com
+X41 = vmess, ff5c0fb.rb.cloudflare.systems, 443, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=true, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=ff5c0fb.fm.icloud.com:30513, ws-headers=Host:ff5c0fb.fm.icloud.com:30513
+X42 = vmess, ff5c0fb.rd.gladns.com, 443, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=true, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=ff5c0fb.fm.icloud.com:30513, ws-headers=Host:ff5c0fb.fm.icloud.com:30513
+X43 = vmess, 211.72.35.153, 443, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=true, ws=true, ws-path=/s/c27821f.fm.icloud.com:16708, sni=211.72.35.153, ws-headers=Host:211.72.35.153
+X44 = vmess, 211.72.35.153, 80, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/c27821f.fm.icloud.com:16708, sni=211.72.35.153, ws-headers=Host:211.72.35.153
+X45 = vmess, 211.72.35.152, 443, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=true, ws=true, ws-path=/s/c27821f.fm.icloud.com:16708, sni=211.72.35.152, ws-headers=Host:211.72.35.152
+X46 = vmess, 211.72.35.152, 80, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/c27821f.fm.icloud.com:16708, sni=211.72.35.152, ws-headers=Host:211.72.35.152
+X47 = vmess, ff5c0fb.rd.cloudflare.systems, 443, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=true, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=ff5c0fb.fm.icloud.com:30513, ws-headers=Host:ff5c0fb.fm.icloud.com:30513
+X48 = vmess, ff5c0fb.rf.gladns.com, 80, username=57e0cb4d-eae5-48ec-8091-149dc2b309e0, tls=false, ws=true, ws-path=/s/ff5c0fb.fm.icloud.com:30513, sni=icloud.com, ws-headers=Host:icloud.com
+X49 = vmess, hinet.ddns.ddnszd.xyz, 12345, username=117136e6-03f6-4300-8d57-232c47d4b71e, tls=false, ws=true, ws-path=/, sni=hinet.ddns.ddnszd.xyz, ws-headers=Host:hinet.ddns.ddnszd.xyz
+X50 = vmess, kr02.101justice.xyz, 443, username=ecdc5550-d752-4bf6-890c-673d479accae, tls=true, ws=true, ws-path=/test, sni=kr02.101justice.xyz, ws-headers=Host:kr02.101justice.xyz
+X51 = vmess, s374.snode.xyz, 443, username=4d466ff5-4817-38a9-b508-859d1e551db6, tls=true, ws=true, ws-path=/panel, sni=s374.snode.xyz, ws-headers=Host:s374.snode.xyz
+X52 = vmess, kr03.fajiazhifu.buzz, 443, username=ecdc5550-d752-4bf6-890c-673d479accae, tls=true, ws=true, ws-path=/test, sni=kr03.fajiazhifu.buzz, ws-headers=Host:kr03.fajiazhifu.buzz
+X53 = vmess, kr02.fajiazhifu.buzz, 443, username=ecdc5550-d752-4bf6-890c-673d479accae, tls=true, ws=true, ws-path=/test, sni=kr02.fajiazhifu.buzz, ws-headers=Host:kr02.fajiazhifu.buzz
+X54 = vmess, fenxiang.meiya.live, 443, username=a6f72235-9211-3fc8-82e2-e83475acf1fa, tls=true, ws=true, ws-path=/v2ray, sni=fenxiang.meiya.live, ws-headers=Host:fenxiang.meiya.live
+X55 = vmess, 162.159.210.102, 443, username=65f11be5-ac71-4f0c-874b-d93c610c66ef, tls=true, ws=true, ws-path=/, sni=us-a.freeproxy1.workers.dev, ws-headers=Host:us-a.freeproxy1.workers.dev
 On = reject
 Off = direct
 DIRECT = direct
+
 [Proxy Group]
-Proxy = select, SS, V2Ray
-CN = select, DIRECT, 🇨🇳电信, 🇨🇳联通, 🇨🇳移动
+Proxy = select, X,X2,X3,X4,X5,X6,X7,X8,X9,X10,X11,X12,X13,X14,X15,X16,X17,X18,X19,X20,X21,X22,X23,X24,X25,X26,X27,X28,X29,X30,X31,X32,X33,X34,X35,X36,X37,X38,X39,X40,X41,X42,X43,X44,X45,X46,X47,X48,X49,X50,X51,X52,X53,X54,X55
 ADblock = select, On, Off
-SS = select, 🇭🇰HKT, 🇭🇰WTT
-V2Ray = select, 🇭🇰SSL-HKT, 🇭🇰SSL-WTT
+
 [Rule]
 # AD Block KEYWORD
 DOMAIN-KEYWORD,admarvel,ADblock
@@ -648,23 +694,6 @@ DOMAIN-SUFFIX,twh5.com,ADblock
 
 #############################################
 
-DOMAIN-SUFFIX, miaopai.com, CN
-DOMAIN, v4.music.126.net, CN
-DOMAIN, m10.music.126.net, CN
-DOMAIN, d7.baidupcs.com, CN
-DOMAIN, ws.cdn.baidupcs.com, CN
-DOMAIN, video.cdn.baidupcs.com, CN
-DOMAIN-KEYWORD, cn-api, CN
-DOMAIN-KEYWORD, sbixby.com, CN
-DOMAIN-KEYWORD, samsung, CN
-DOMAIN, dls.di.atlas.samsung.com, CN
-DOMAIN-SUFFIX, samsungfeed.com, CN
-DOMAIN-SUFFIX, samsungcloud.com, CN
-DOMAIN-SUFFIX, outlook.com, CN
-DOMAIN-KEYWORD, weixin.qq.com, CN
-#frp
-DOMAIN-KEYWORD, 192-168-10-, Home
-IP-CIDR, 192.168.10.1/24, Home, no-resolve
 #DNS polution
 DOMAIN-SUFFIX, facebook.com, Proxy, force-remote-dns
 DOMAIN-SUFFIX, fb.com, Proxy, force-remote-dns
@@ -685,46 +714,7 @@ DOMAIN-SUFFIX, google.com, Proxy, force-remote-dns
 DOMAIN-SUFFIX, gmail.com, Proxy, force-remote-dns
 DOMAIN-SUFFIX, whatsapp.net, Proxy, force-remote-dns
 DOMAIN-KEYWORD, google, Proxy, force-remote-dns
-# Accelerate top cn sites
-DOMAIN-KEYWORD, alipay, CN
-DOMAIN-KEYWORD, baidu, CN
-DOMAIN-KEYWORD, taobao, CN
-DOMAIN-KEYWORD, sinaimg, CN
-DOMAIN-SUFFIX, 126.net, CN
-DOMAIN-SUFFIX, 163.com, CN
-DOMAIN-SUFFIX, alicdn.com, CN
-DOMAIN-SUFFIX, amap.com, CN
-DOMAIN-SUFFIX, bdimg.com, CN
-DOMAIN-SUFFIX, bdstatic.com, CN
-DOMAIN-SUFFIX, ccgslb.com.cn, CN
-DOMAIN-SUFFIX, cnbeta.com, CN
-DOMAIN-SUFFIX, cnzz.com, CN
-DOMAIN-SUFFIX, douban.com, CN
-DOMAIN-SUFFIX, gtimg.com, CN
-DOMAIN-SUFFIX, hao123.com, CN
-DOMAIN-SUFFIX, haosou.com, CN
-DOMAIN-SUFFIX, ifeng.com, CN
-DOMAIN-SUFFIX, iqiyi.com, CN
-DOMAIN-SUFFIX, jd.com, CN
-DOMAIN-SUFFIX, netease.com, CN
-DOMAIN-SUFFIX, ourdvs.com, CN
-DOMAIN-SUFFIX, qhimg.com, CN
-DOMAIN-SUFFIX, qq.com, CN
-DOMAIN-SUFFIX, sogou.com, CN
-DOMAIN-SUFFIX, sohu.com, CN
-DOMAIN-SUFFIX, soso.com, CN
-DOMAIN-SUFFIX, steamstatic.com, CN
-DOMAIN-SUFFIX, steamcommunity.com, CN
-DOMAIN-SUFFIX, suning.com, CN
-DOMAIN-SUFFIX, tmall.com, CN
-DOMAIN-SUFFIX, tudou.com, CN
-DOMAIN-SUFFIX, weibo.com, CN
-DOMAIN-SUFFIX, youku.com, CN
-DOMAIN-SUFFIX, xunlei.com, CN
-DOMAIN-SUFFIX, zhihu.com, CN
-DOMAIN-SUFFIX, blackssl.com, CN
-DOMAIN-SUFFIX, darkssl.com, CN
-DOMAIN-SUFFIX, polarynetwork.com, CN
+
 # Top blocked sites
 DOMAIN-SUFFIX, 4sqi.net, Proxy
 DOMAIN-SUFFIX, abpchina.org, Proxy
@@ -917,7 +907,4 @@ GEOIP, CN, CN
 FINAL, Proxy
 
 [Host]
-sci-hub.org = 80.82.77.83
-sci-hub.cc = 80.82.77.84
-sci-hub.bz = 80.82.77.84
-bbs.pcbeta.com = 218.93.127.136
+
